@@ -11,6 +11,12 @@ public class HomeController {
     @ResponseBody
     public String home(){
 
-    return "This is the landing page!";
-}
+    return "This is the landing page!";}
+
+//    REFACTOR FOR VIEW
+    @GetMapping("/home")
+            public String welcome(){
+        return "home";
+    }
+
 }
